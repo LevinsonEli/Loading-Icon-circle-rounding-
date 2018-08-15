@@ -1,0 +1,40 @@
+
+body {
+	text-align: center;
+	font-family: Helvetica;
+	background: #eee;
+}
+
+h1 {
+	color: #99a5cc;
+}
+
+.loading__icon {
+	margin: 30px auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 15px solid #aaa;
+	border-top: 15px solid #55cc55;
+	border-bottom: 15px solid steelblue;
+	animation: loadingIconAnimation 3s 0s linear infinite;
+}
+
+.blink__footer {
+	margin: 20px auto;
+	opacity: 0;
+	animation: blinking 3s 0s ease-in-out infinite;
+}
+
+@keyframes loadingIconAnimation {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes blinking {
+	50% {
+		opacity: 1;
+	}
+}
+
